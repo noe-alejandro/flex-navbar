@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="social">
+                    <a href="http://twitter.com/wesbos"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://facebook.com/wesbos.developer"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://github.com/wesbos"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="social">
+                    <a href="http://instagram.com/wesbos"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="image-container">
+
+            <div class="selected-image">
+                <img src="images/tech1.jpeg">
+            </div>
+            
+            <div class="list-of-images"> <!-- start flex container -->
+                <img src="images/tech1.jpeg">
+                <img src="images/tech2.jpeg">
+                <img src="images/tech3.jpeg">
+                <img src="images/tech4.jpeg">
+                <img src="images/tech5.jpeg">
+                <img src="images/tech6.jpeg">
+                <img src="images/tech7.jpeg">
+                <img src="images/tech8.jpeg">
+            </div> <!-- end flex container -->
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 2px dotted blue;
+}
+  
+a {
+    display: inline-block;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 2px dotted mistyrose;
+    transition: background 0.5s;
+    width: 100%;
+    text-align: center;
+}
+  
+a:hover {
+    background:rgba(0,0,0,0.3);
+}
+
+.flex-nav {
+    border: 2px dotted purple;
+}
+
+.flex-nav ul {
+    display: flex;
+    list-style: none;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-nav li {
+    flex: 3;
+}
+
+.flex-nav .social {
+    flex: 1;
+}
+
+.image-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.selected-image img {
+    width: 100%;
+}
+
+.selected-image {
+    padding: 15px 0;
+}
+
+/* Flex Start */
+.list-of-images {
+    display: flex;
+    border: 10px solid lightgrey;
+    border-radius: 7px 7px;
+    background: lightgrey;
+    text-align: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+    align-items: center;
+}
+
+.list-of-images img {
+    width: 25%;
+    height: 30%;
+    border: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+@media all and (max-width: 850px) {
+    .list-of-images img {
+        width: 33.3333%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .list-of-images img {
+        width: 50%;
+    }
+}
