@@ -62,7 +62,7 @@ const config = {
             sourceMap: false
         }),
         new HtmlWebpackPlugin({
-            title: 'Empty Project',
+            title: 'Flex Navbar',
             template: './src/index.html',
             filename: 'index.html',
             minify: {
