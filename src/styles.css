@@ -1,4 +1,3 @@
-/* Some CSS Setup - nothing to do with flexbox */
 html {
     box-sizing: border-box;
 }
@@ -10,13 +9,15 @@ html {
 body {
     font-family: sans-serif;
     margin: 0;
+    background-color: rgb(184,198,223);
 }
 
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
-    border: 2px dotted blue;
+    background: radial-gradient(ellipse at center, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%);
+    height: 100vh;
 }
   
 a {
@@ -27,7 +28,6 @@ a {
     background: rgba(0,0,0,0.2);
     font-weight: 100;
     letter-spacing: 2px;
-    border: 2px dotted mistyrose;
     transition: background 0.5s;
     width: 100%;
     text-align: center;
@@ -37,16 +37,28 @@ a:hover {
     background:rgba(0,0,0,0.3);
 }
 
-.flex-nav {
-    border: 2px dotted purple;
+.toggle-anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 25px;
 }
 
 .flex-nav ul {
     display: flex;
     list-style: none;
-    border: 1px solid black;
     padding: 0;
     margin: 0;
+
+    overflow: hidden;
+    transition: max-height 0.5s;
 }
 
 .flex-nav li {
@@ -55,4 +67,38 @@ a:hover {
 
 .flex-nav .social {
     flex: 1;
+}
+
+@media all and (max-width: 1000px) {
+    .flex-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .flex-nav li {
+        flex: 1 1 50%;
+    }
+
+    .flex-nav .social {
+        flex: 1 1 25%;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .toggle-nav {
+        display: block;
+    }
+
+    .flex-nav li {
+        flex-basis: 100%;
+    }
+
+    .flex-nav ul {
+        max-height: 0;
+    }
+
+    .flex-nav ul.open {
+        display: flex;
+        max-height: 401px;
+    }
 }

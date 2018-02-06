@@ -1,5 +1,13 @@
 # Flex Navbar
 
+![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar01_wdjjfz.png)
+
+![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar02_s31yx2.png)
+
+![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar03_qi3tiw.png)
+
+![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar04_tg3qko.png)
+
 ## Requirements
 
 * Node.js v5.10 or greater
@@ -11,14 +19,13 @@ Flex Navbar uses [webpack](https://github.com/webpack/webpack) v3.10.0 for produ
 
 ### Development
 
-In the project root foler using terminal enter:
-
 ```$: npm run dev```
 
-Navigate to to [http://localhost:9000](http://localhost:9000) in your browser.
+Navigate to to [http://localhost:9000](http://localhost:9000) in your web browser.
 
 ### Production
 
 In the project root foler using terminal enter:
 
 ```$: npm run build```
+

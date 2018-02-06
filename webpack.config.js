@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
 
 const autoprefixer = () => ({
     loader: 'postcss-loader',
@@ -57,7 +57,7 @@ const config = {
     },
 
     plugins: [
-        new UglifyJsPlugin({
+        new UglifyWebpackPlugin({
             exclude: /node_modules/,
             sourceMap: false
         }),

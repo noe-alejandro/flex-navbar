@@ -19,6 +19,7 @@
     "image-webpack-loader": "^4.0.0",
     "postcss-loader": "^2.1.0",
     "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
