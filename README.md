@@ -4,13 +4,12 @@
 
 ![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar02_s31yx2.png)
 
-![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar03_qi3tiw.png)
+<img src="https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517944098/flex-navbar03_w8wjyc.png" alt="Flex Navbar" width="400" height="300">
 
-![logo](https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517896593/flex-navbar04_tg3qko.png)
+<img src="https://res.cloudinary.com/dlsqyyz1p/image/upload/v1517944095/flex-navbar04_m5eknk.png" alt="Flex Navbar" width="400" height="550">
 
 ## Requirements
 
-* Node.js v5.10 or greater
 * npm v2.11.1 or greater
 
 ## Getting Started

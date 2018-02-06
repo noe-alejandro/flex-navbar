@@ -4,7 +4,7 @@ const App = document.addEventListener('DOMContentLoaded', (event) => {
     const anchorTag = document.querySelector('.toggle-anchor');
     const flexNavUL = document.querySelector('.flex-nav ul');
 
-    anchorTag.addEventListener('click', (e) => {
+    anchorTag.addEventListener('click', () => {
         flexNavUL.classList.toggle('open');
     });
 });
