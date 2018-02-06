@@ -30,7 +30,8 @@ const config = {
                         {
                             loader: 'css-loader',
                             options: {
-                                importLoaders: 1
+                                importLoaders: 1,
+                                minimize: true
                             }
                         },
                         autoprefixer()
@@ -52,7 +53,8 @@ const config = {
                     loader: 'image-webpack-loader'
                   }
                 ]
-              }
+            },
+            { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
         ]
     },
 
