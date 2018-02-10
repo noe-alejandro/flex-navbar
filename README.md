@@ -15,6 +15,11 @@
 
 ## Getting Started
 
+To get started you'll need to install the devDependencies for this project. In the project root folder type:
+```bash
+$: npm install
+```
+
 Flex Navbar uses [webpack](https://github.com/webpack/webpack) v3.10.0 for production builds and [webpack-dev-server](https://github.com/webpack/webpack-dev-server) v2.11.1 for development and serving files on http://localhost:9000
 
 ### Development
